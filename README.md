@@ -73,19 +73,20 @@
   
 ## 🌍 Enlaces de interés
 
-🔹 [Documentación HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+🔹 <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"> 🔹 Documentación HTML </a>
+
 
 
 <p>   
-    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"> Documentación CSS </a>
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"> 🔹 Documentación CSS </a>
 </p>
 
 <p>   
-    <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Flexbox" target="_blank"> Guía Flexbox </a>
+    <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Flexbox" target="_blank"> 🔹 Guía Flexbox </a>
 </p>
 
 <p>   
-    <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout" target="_blank"> Guía Grid </a>
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout" target="_blank"> 🔹 Guía Grid </a>
 </p>
 
 
