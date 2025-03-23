@@ -73,9 +73,7 @@
   
 ## 🌍 Enlaces de interés
 
-<p>   
-    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"> Documentación HTML </a>
-</p>
+🔹 <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Documentación HTML</a>
 
 <p>   
     <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"> Documentación CSS </a>
