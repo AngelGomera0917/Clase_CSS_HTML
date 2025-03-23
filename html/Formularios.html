@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formularios </title>
+
+</head>
+<body>
+
+    <h1> Pedro tiene un carro blanco </h1>
+
+    <!-- <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required> -->
+
+    <form action=" Aqui colocamos la direccion del archivo en el servidor que va a recibir los datos del formulario " method="post"> <!-- Metodo post, es para enviar los datos de manera segura -->
+
+                                        <!-- Botones enviar -->
+
+        <input type="text" placeholder=" Escribir tu nombre " required> <!-- Input me permite entrar datos desde el lado del cliente y Con el Placeholder lo que hago es que escribo un texto dentro de mi input que se le muestra al usuario antes de empezar a escribir -->
+        <!-- Con REQUIRED lo que hago es que le digo que tiene que llenar ese cambo obligatoriamente -->
+        
+        <button type="submit"> 
+            Enviar 
+        </button>  <!-- Button me permite enviar los datos -->
+
+        <button type="button"> 
+            Cancelar 
+        </button> <!-- Button me permite cancelar los datos -->
+
+        <button type="reset"> 
+            Limpiar 
+        </button> <!-- Button me permite limpiar los datos -->
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h2> Cual de las opciones es la correcta? </h2>
+
+                                                <!-- Botones de Radio -->
+
+        <label for="Op1"> 
+            <input id="Op1" type="radio" value="Opcion 1" name="Opcion 1-Opcion 2-Opcion 3-Opcion 4" required checked> Opcion 1 
+        </label> <br>  <!-- Radio me permite realizar opciones elejibles como en un cuestionario y elejir la repuesta correcta -->
+        <!-- for me permite relacionar el label con el input, para que al darle click al label se seleccione el input -->
+        <!-- label me permite poner un texto al lado del input, me permite seleccionar la opcion dando click a la palabra-->
+        
+        <input type="radio" value="Opcion 2" name="Opcion 1-Opcion 2-Opcion 3-Opcion 4" required> Opcion 2 <br>
+
+        <input type="radio" value="Opcion 3" name="Opcion 1-Opcion 2-Opcion 3-Opcion 4" required> Opcion 3 <br> 
+
+        <input type="radio" value="Opcion 4" name="Opcion 1-Opcion 2-Opcion 3-Opcion 4" required> Opcion 4 <br> <!--  El Name es el mismo para todos los input, para que solo se pueda seleccionar una opcion entre todas las opciones -->
+        <!-- No es necesario crear el grupo de nombres igual al de las opciones, pero es una buena practica para que solo se pueda seleccionar una opcion entre todas las opciones -->
+        
+
+        <br>
+        
+        <button type="submit"> <!-- Button me permite enviar los datos -->
+            Enviar
+        </button>
+
+        <button type="reset"> <!-- Button me permite limpiar los datos -->
+            Eliminar
+        </button>
+        
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <h2> Selecciona 3 de tus vehiculos preferidos pedro solano</h2>
+
+                                                    <!-- Botones de Checkbox -->
+
+        <label> 
+            <input type="checkbox"  value="Hyundai " name = "Personaliozada"  checked> Hyundai 
+        </label> <br> <!-- checked me permite que una de las opciones del checkbox este seleccionado por defecto -->
+
+        <label> 
+            <input type= "checkbox" name = "Personaliozada" value="Mercedez "> Mercedez 
+        </label> <br> <!-- Checkbox me permite seleccionar varias opciones -->
+
+        <label> 
+            <input type= "checkbox" name = "Mercedez-toyta" value="Toyota" name = "Personaliozada" > Toyota 
+        </label> <br>
+        <!-- El name aqui es diferente aqui porque lo que hace es que me los agrupa, aunque me permita elejir varias opciones -->
+        <label> 
+            <input type= "checkbox" value=" Honda " name = "Personaliozada" > Honda 
+        </label> <br> 
+
+        <label>
+            <input type= "checkbox" value="Ford" name = "Personaliozada" > Ford 
+        </label> <br> <!-- Value me permite darle un valor a la opcion que se selecciona, para que cuando se envie el formulario se envie el valor que se le dio a la opcion seleccionada y asi el servidor pueda procesar la informacion
+        Porque al cuando selecciono esta opcion mi servidor no sabe que valor eleji en si, pero con value y el nombre del valor se lo especificamos mejor -->
+
+        <label> 
+            <input type= "checkbox" value="Chevrolet" name = "Personaliozada" > Chevrolet 
+        </label> <br> 
+
+        <label> 
+            <input type= "checkbox" value="BWM" name = "Personaliozada" > BMW 
+        </label> <br> 
+        <label> 
+            <input type= "checkbox" value="Audi" name = "Personaliozada" > Audi 
+        </label> <br> 
+
+        <label> 
+            <input type= "checkbox" value="Nissan" name = "Personaliozada" > Nissan 
+        </label> <br> <!-- El name solo se lo puse para que todos queden dentro del mismo grupo de opciones -->
+
+        <label for="Jeep"> 
+            <input id= "Jeep" type= "checkbox" value="Jeep" name = "Personaliozada" > Jeep 
+        </label> <br> 
+        <!-- Le puse un ID a Jeep para relacionar mas el label con el input, para que al darle click al label se seleccione el input -->
+
+        <br> 
+
+        <button type="submit"> <!-- Button me permite enviar los datos -->
+            Enviar
+        </button> 
+
+        <button type="reset"> <!-- Button me permite limpiar los datos -->
+            Eliminar 
+        </button>
+        
+        <br>
+
+        <h2> Formulario de contacto </h2> <br>
+
+        </form> 
+
+        <form action="#">
+
+            <label for="Nombre">
+                Nombre:
+            </label>
+            
+            <input type="text" id="Nombre" name="nombre"> <br> <br>
+
+            <label for="Mensaje">
+                Mensaje:
+            </label>
+
+            <textarea 
+                id="Mensaje" name="mensaje" required rows="10" cols="50"> <!-- Rows me permite darle un tamaño a mi textarea en cuanto a las filas y cols me permite darle un tamaño en cuanto a las columnas
+            </textarea> <br> <br> <!-- Textarea me permite escribir un texto mas largo que un input -->
+
+
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form> 
+
+        <!-- <div> Esto es un contenedor que me agrupa los elementos y cuando este trabajando con CSS me va a permitir darle estilos a este contenedor completo </div> -->
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <h2> Etiqueta Div </h2>
+
+        <div> <!-- Aqui le dejo saber que con CSS le puedo poner un tamaño, color o lo que sea a todo lo que esta dentro de mi contenedor DIV -->
+            <ul>
+
+                <li> Item 1 </li>
+                <li> Item 2 </li>
+                <li> Item 3 </li>
+                <li> Item 4 </li>
+                <li> Item 5 </li>
+                <li> Item 6 </li>
+            </ul>
+            
+        </div> <!-- Div me permite agrupar elementos y darle estilos a ese grupo de elementos -->
+
+    <span> <!-- Span me permite darle estilos a un texto o a un grupo de texto, tambien es un contenedor al igual que DIV -->
+        <h3> By Darli Diaz </h3>
+    </span>
+
+    <br>
+    <hr>
+    <footer>
+        <h4> Derechos Reservados </h4>
+    </footer>
+</body> 
+</html> 

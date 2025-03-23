@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Básica </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, select, button {
+            margin: 10px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2> Calculadora Básica </h2>
+
+    <input type="number" id="num1" placeholder="Número 1" required>
+    <select id="operacion">
+        <option value="sumar">Sumar</option>
+        <option value="restar">Restar</option>
+        <option value="multiplicar">Multiplicar</option>
+        <option value="dividir">Dividir</option>
+    </select>
+    <input type="number" id="num2" placeholder="Número 2" required>
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcular() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let operacion = document.getElementById("operacion").value;
+            let resultado = document.getElementById("resultado");
+
+            // Validar que los campos no estén vacíos
+            if (num1 === "" || num2 === "") {
+                resultado.textContent = "Por favor, ingrese ambos números.";
+                return;
+            }
+
+            // Convertir los valores a números
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2); 
+
+            // Verificar si la conversión es correcta
+            if (isNaN(num1) || isNaN(num2)) {
+                resultado.textContent = "Ingrese valores numéricos válidos.";
+                return;
+            }
+
+            let res;
+            switch (operacion) {
+                case "sumar":
+                    res = num1 + num2;
+                    break;
+                case "restar":
+                    res = num1 - num2;
+                    break;
+                case "multiplicar":
+                    res = num1 * num2;
+                    break;
+                case "dividir":
+                    if (num2 === 0) {
+                        resultado.textContent = "No se puede dividir por 0.";
+                        return;
+                    }
+                    res = num1 / num2;
+                    break;
+                default:
+                    resultado.textContent = "Operación no válida.";
+                    return;
+            }
+
+            resultado.textContent = `Resultado: ${res}`;
+        }
+    </script>
+
+</body>
+</html>
