@@ -1,6 +1,15 @@
 # 🎨 Curso de HTML y CSS
 
 - 📌 Aprende desde cero a crear páginas web con HTML y CSS
+  
+
+## 🌍 Enlace GitHub
+
+- <p>   
+       <a href="https://github.com/AngelGomera0917/Clase_CSS_HTML" target="_blank">  Enlace del curso en GitHub </a>
+ </p>
+
+
 
 ## 📖 Descripción
 
@@ -89,12 +98,6 @@
     <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout" target="_blank"> 🔹 Guía Grid </a>
 </p>
 
-
-## 🌍 Enlace GitHub
-
-<p>   
-      <a href="https://github.com/AngelGomera0917/Clase_CSS_HTML" target="_blank"> 🔹 Enlace de curso GitHub </a>
-</p>
 
 
 ## 🤝 Contribuciones
